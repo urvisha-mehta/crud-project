@@ -16,3 +16,13 @@ function insertUserData($data)
 
     return $result;
 }
+
+function insertCountry()
+{
+    $country = $_POST['country-name'];
+    $conn = $GLOBALS['conn'];
+    $query = "INSERT INTO countries(country-name) VALUES ($country)";
+    $result = mysqli_query($conn, $query);
+
+    return $result;
+}

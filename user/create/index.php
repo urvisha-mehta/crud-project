@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <?php @include('./style.php') ?>
+    <?php @include('../../layouts/style.php') ?>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed" data-panel-auto-height-mode="height">
+    <h1>11</h1>
     <div class="wrapper">
         <?php
-        @include './header.php';
+        @include '../../layouts/header.php';
         ?>
         <!-- Main Sidebar Container -->
         <?php
-        @include './sidebar.php';
+        @include '../../layouts/sidebar.php';
         ?>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -31,7 +32,7 @@
         </div>
     </div>
 
-    <?php @include('./script.php') ?>
+    <?php @include('../../layouts/script.php') ?>
 </body>
 
 </html>
