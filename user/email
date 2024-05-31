@@ -1,0 +1,11 @@
+if ($email !== "") {
+            $conn = $GLOBALS['conn'];
+            $checkEmail  = "SELECT * FROM users where email_address = '$email'";
+            $resultEmail = mysqli_query($conn, $checkEmail);
+            $count = mysqli_num_rows($resultEmail);
+            $emailError = array();
+            if ($count > 0) {
+
+                $emailError['message'] = 'Email Already Exist';
+            }
+        }

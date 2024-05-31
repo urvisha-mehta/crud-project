@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    text-align: start;
+  }
+  body {
+    background-color: lightblue;
+  }
+  input {
+    margin-bottom: 5px;
+  }
+  div {
+    margin-bottom: 5px;
+  }
+  
